@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">forecast</string>
+    <string name="temp_symbol">°</string>
+</resources>

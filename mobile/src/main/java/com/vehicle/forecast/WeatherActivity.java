@@ -47,18 +47,18 @@ public class WeatherActivity extends AppCompatActivity {
     private TextView mHumidity;
     private TextView mCity;
 
-    private SeekBar mSeekbar;
-    private TextView mDestination;
-    private TextView mTime;
-    private TextView mDistance;
+//    private SeekBar mSeekbar;
+//    private TextView mDestination;
+//    private TextView mTime;
+//    private TextView mDistance;
 
-    private ImageView mIVType1;
-    private TextView mTemp1;
-    private TextView mTempUp1;
-    private TextView mTempDown1;
-    private TextView mWdsd1;
-    private TextView mHumidity1;
-    private TextView mCity1;
+//    private ImageView mIVType1;
+//    private TextView mTemp1;
+//    private TextView mTempUp1;
+//    private TextView mTempDown1;
+//    private TextView mWdsd1;
+//    private TextView mHumidity1;
+//    private TextView mCity1;
 
     private SeekBar mSeekbar1;
     private TextView mDestination1;
@@ -140,23 +140,23 @@ public class WeatherActivity extends AppCompatActivity {
         mHumidity = view0.findViewById(R.id.tv_humidity);
         mCity = view0.findViewById(R.id.tv_city);
 
-        mSeekbar = view0.findViewById(R.id.seekbar);
-        mSeekbar.setEnabled(false);
-        mSeekbar.setMax(100);//
-        mSeekbar.setProgress(50);//
-        mDestination = view0.findViewById(R.id.tv_dest);
-        mTime = view0.findViewById(R.id.tv_time);
-        mDistance = view0.findViewById(R.id.tv_distance);
+//        mSeekbar = view0.findViewById(R.id.seekbar);
+//        mSeekbar.setEnabled(false);
+//        mSeekbar.setMax(100);//
+//        mSeekbar.setProgress(50);//
+//        mDestination = view0.findViewById(R.id.tv_dest);
+//        mTime = view0.findViewById(R.id.tv_time);
+//        mDistance = view0.findViewById(R.id.tv_distance);
     }
 
     private void getView1() {
-        mIVType1 = view1.findViewById(R.id.iv_type);
-        mTemp1 = view1.findViewById(R.id.tv_temp);
-        mTempUp1 = view1.findViewById(R.id.tv_temp_up);
-        mTempDown1 = view1.findViewById(R.id.tv_temp_down);
-        mWdsd1 = view1.findViewById(R.id.tv_windspeed);
-        mHumidity1 = view1.findViewById(R.id.tv_humidity);
-        mCity1 = view1.findViewById(R.id.tv_city);
+//        mIVType1 = view1.findViewById(R.id.iv_type);
+//        mTemp1 = view1.findViewById(R.id.tv_temp);
+//        mTempUp1 = view1.findViewById(R.id.tv_temp_up);
+//        mTempDown1 = view1.findViewById(R.id.tv_temp_down);
+//        mWdsd1 = view1.findViewById(R.id.tv_windspeed);
+//        mHumidity1 = view1.findViewById(R.id.tv_humidity);
+//        mCity1 = view1.findViewById(R.id.tv_city);
 
         mSeekbar1 = view1.findViewById(R.id.seekbar);
         mSeekbar1.setEnabled(false);
@@ -194,12 +194,12 @@ public class WeatherActivity extends AppCompatActivity {
                         mHumidity.setText(humidity);
                         mWdsd.setText(Html.fromHtml(wdsd));
 
-                        mCity1.setText(TodayUtil.getCityWithParent(city));
-                        mHumidity1.setText(humidity);
-                        mWdsd1.setText(Html.fromHtml(wdsd));
+//                        mCity1.setText(TodayUtil.getCityWithParent(city));
+//                        mHumidity1.setText(humidity);
+//                        mWdsd1.setText(Html.fromHtml(wdsd));
                         if (wdsd.equals("")){
                             mWdsd.setText("0km/h");
-                            mWdsd1.setText("0km/h");
+//                            mWdsd1.setText("0km/h");
                         }
                     }
                 }
@@ -234,10 +234,10 @@ public class WeatherActivity extends AppCompatActivity {
                         mTemp.setText(wendu);
                         mIVType.setImageResource(TodayUtil.getWeatherTypeImage(type));
 
-                        mTempUp1.setText(TodayUtil.getHighTemperature(high));
-                        mTempDown1.setText(TodayUtil.getLowTemperature(low));
-                        mTemp1.setText(wendu);
-                        mIVType1.setImageResource(TodayUtil.getWeatherTypeImage(type));
+//                        mTempUp1.setText(TodayUtil.getHighTemperature(high));
+//                        mTempDown1.setText(TodayUtil.getLowTemperature(low));
+//                        mTemp1.setText(wendu);
+//                        mIVType1.setImageResource(TodayUtil.getWeatherTypeImage(type));
 
 
                     }
